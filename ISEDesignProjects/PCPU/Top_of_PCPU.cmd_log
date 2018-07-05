@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "H:/FPGALab/ISEDesignProjects/PCPU/Top_of_PCPU.xst" -ofn "H:/FPGALab/ISEDesignProjects/PCPU/Top_of_PCPU.syr" 
+xst -intstyle ise -ifn "H:/FPGALab/ISEDesignProjects/PCPU/Top_of_PCPU.xst" -ofn "H:/FPGALab/ISEDesignProjects/PCPU/Top_of_PCPU.syr" 

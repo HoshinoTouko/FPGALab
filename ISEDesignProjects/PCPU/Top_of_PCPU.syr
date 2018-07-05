@@ -1,0 +1,237 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: Top_of_PCPU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top_of_PCPU.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top_of_PCPU"
+Output Format                      : NGC
+Target Device                      : xc7k160t-2L-fbg676
+
+---- Source Options
+Top Module Name                    : Top_of_PCPU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"IO" "ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "H:\FPGALab\ISEDesignProjects\PCPU\src_pcpu\hazard\HazardUnit.v" into library work
+Parsing verilog file "./define/instruction_def.v" included at line 1.
+Parsing module <HazardUnit>.
+Analyzing Verilog file "H:\FPGALab\ISEDesignProjects\PCPU\src_pcpu\hazard\ForwardUnit.v" into library work
+Parsing verilog file "./define/instruction_def.v" included at line 1.
+Parsing module <ForwardUnit>.
+Analyzing Verilog file "H:\FPGALab\ISEDesignProjects\PCPU\src_pcpu\datapath\PC.v" into library work
+Parsing module <Pc>.
+Analyzing Verilog file "H:\FPGALab\ISEDesignProjects\PCPU\src_pcpu\datapath\mux.v" into library work
+Parsing module <two_way_mux_32_bit>.
+Parsing module <three_way_mux_32_bit>.
+Analyzing Verilog file "H:\FPGALab\ISEDesignProjects\PCPU\src_pcpu\datapath\MEM_WB.v" into library work
+Parsing module <MEM_WB>.
+Analyzing Verilog file "H:\FPGALab\ISEDesignProjects\PCPU\src_pcpu\datapath\IF_ID.v" into library work
+Parsing module <IF_ID>.
+Analyzing Verilog file "H:\FPGALab\ISEDesignProjects\PCPU\src_pcpu\datapath\ID_EX.v" into library work
+Parsing module <ID_EX>.
+Analyzing Verilog file "H:\FPGALab\ISEDesignProjects\PCPU\src_pcpu\datapath\GPR.v" into library work
+Parsing module <GPR>.
+Analyzing Verilog file "H:\FPGALab\ISEDesignProjects\PCPU\src_pcpu\datapath\EX_MEM.v" into library work
+Parsing module <EX_MEM>.
+Analyzing Verilog file "H:\FPGALab\ISEDesignProjects\PCPU\src_pcpu\datapath\Ext.v" into library work
+Parsing verilog file "./define/ctrl_encode_def.v" included at line 1.
+Parsing module <Ext>.
+Analyzing Verilog file "H:\FPGALab\ISEDesignProjects\PCPU\src_pcpu\datapath\Alu.v" into library work
+Parsing verilog file "./define/ctrl_encode_def.v" included at line 1.
+Parsing module <Alu>.
+Analyzing Verilog file "H:\FPGALab\ISEDesignProjects\PCPU\src_pcpu\control\CtrlUnit.v" into library work
+Parsing verilog file "./define/ctrl_encode_def.v" included at line 1.
+Parsing verilog file "./define/instruction_def.v" included at line 2.
+Parsing module <Ctrl>.
+Analyzing Verilog file "H:\FPGALab\ISEDesignProjects\PCPU\src_pcpu\PCPU.v" into library work
+Parsing verilog file "./define/ctrl_encode_def.v" included at line 1.
+Parsing module <PCPU>.
+Analyzing Verilog file "H:\FPGALab\ISEDesignProjects\PCPU\ipcore_dir\ROM_D.v" into library work
+Parsing module <ROM_D>.
+Analyzing Verilog file "H:\FPGALab\ISEDesignProjects\PCPU\ipcore_dir\RAM_B.v" into library work
+Parsing module <RAM_B>.
+Analyzing Verilog file "H:\FPGALab\ISEDesignProjects\PCPU\IO\SSeg7_Dev_IO.v" into library work
+Parsing module <SSeg7_Dev>.
+Analyzing Verilog file "H:\FPGALab\ISEDesignProjects\PCPU\IO\SPIO_IO.v" into library work
+Parsing module <SPIO>.
+Analyzing Verilog file "H:\FPGALab\ISEDesignProjects\PCPU\IO\SEnter_2_32_IO.v" into library work
+Parsing module <SEnter_2_32>.
+Analyzing Verilog file "H:\FPGALab\ISEDesignProjects\PCPU\IO\SAnti_jitter_IO.v" into library work
+Parsing module <SAnti_jitter>.
+Analyzing Verilog file "H:\FPGALab\ISEDesignProjects\PCPU\IO\Multi_8CH32_IO.v" into library work
+Parsing module <Multi_8CH32>.
+Analyzing Verilog file "H:\FPGALab\ISEDesignProjects\PCPU\IO\MIO_BUS_IO.v" into library work
+Parsing module <MIO_BUS>.
+Analyzing Verilog file "H:\FPGALab\ISEDesignProjects\PCPU\IO\Counter_3_IO.v" into library work
+Parsing module <Counter_x>.
+Analyzing Verilog file "H:\FPGALab\ISEDesignProjects\PCPU\IO\clk_div.v" into library work
+Parsing module <clk_div>.
+Analyzing Verilog file "H:\FPGALab\ISEDesignProjects\PCPU\top.v" into library work
+Parsing module <Top_of_PCPU>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:25 - "H:\FPGALab\ISEDesignProjects\PCPU\top.v" Line 122: Module <ROM_D> does not have a port named <a>.
+WARNING:HDLCompiler:25 - "H:\FPGALab\ISEDesignProjects\PCPU\top.v" Line 123: Module <ROM_D> does not have a port named <spo>.
+WARNING:HDLCompiler:1016 - "H:\FPGALab\ISEDesignProjects\PCPU\top.v" Line 122: Port clka is not connected to this instance
+WARNING:HDLCompiler:25 - "H:\FPGALab\ISEDesignProjects\PCPU\top.v" Line 124: Module <RAM_B> does not have a port named <addra>.
+WARNING:HDLCompiler:25 - "H:\FPGALab\ISEDesignProjects\PCPU\top.v" Line 125: Module <RAM_B> does not have a port named <clka>.
+WARNING:HDLCompiler:25 - "H:\FPGALab\ISEDesignProjects\PCPU\top.v" Line 126: Module <RAM_B> does not have a port named <dina>.
+WARNING:HDLCompiler:25 - "H:\FPGALab\ISEDesignProjects\PCPU\top.v" Line 127: Module <RAM_B> does not have a port named <wea>.
+WARNING:HDLCompiler:25 - "H:\FPGALab\ISEDesignProjects\PCPU\top.v" Line 128: Module <RAM_B> does not have a port named <douta>.
+WARNING:HDLCompiler:1016 - "H:\FPGALab\ISEDesignProjects\PCPU\top.v" Line 124: Port a is not connected to this instance
+
+Elaborating module <Top_of_PCPU>.
+
+Elaborating module <SEnter_2_32>.
+WARNING:HDLCompiler:1499 - "H:\FPGALab\ISEDesignProjects\PCPU\IO\SEnter_2_32_IO.v" Line 21: Empty module <SEnter_2_32> remains a black box.
+WARNING:HDLCompiler:1127 - "H:\FPGALab\ISEDesignProjects\PCPU\top.v" Line 107: Assignment to Ai ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "H:\FPGALab\ISEDesignProjects\PCPU\top.v" Line 108: Assignment to Bi ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "H:\FPGALab\ISEDesignProjects\PCPU\top.v" Line 109: Assignment to blink ignored, since the identifier is never used
+WARNING:HDLCompiler:1016 - "H:\FPGALab\ISEDesignProjects\PCPU\src_pcpu\PCPU.v" Line 102: Port Zero is not connected to this instance
+
+Elaborating module <PCPU>.
+
+Elaborating module <Pc>.
+WARNING:HDLCompiler:189 - "H:\FPGALab\ISEDesignProjects\PCPU\src_pcpu\PCPU.v" Line 90: Size mismatch in connection of port <PcWrite>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1127 - "H:\FPGALab\ISEDesignProjects\PCPU\src_pcpu\PCPU.v" Line 90: Assignment to pc_in ignored, since the identifier is never used
+
+Elaborating module <IF_ID>.
+
+Elaborating module <GPR>.
+
+Elaborating module <Ext>.
+
+Elaborating module <Ctrl>.
+
+Elaborating module <ID_EX>.
+
+Elaborating module <Alu>.
+WARNING:HDLCompiler:189 - "H:\FPGALab\ISEDesignProjects\PCPU\src_pcpu\PCPU.v" Line 101: Size mismatch in connection of port <Zero>. Formal port size is 32-bit while actual signal size is 1-bit.
+
+Elaborating module <MEM_WB>.
+
+Elaborating module <two_way_mux_32_bit>.
+WARNING:HDLCompiler:189 - "H:\FPGALab\ISEDesignProjects\PCPU\src_pcpu\PCPU.v" Line 106: Size mismatch in connection of port <output_data>. Formal port size is 32-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:1127 - "H:\FPGALab\ISEDesignProjects\PCPU\src_pcpu\PCPU.v" Line 110: Assignment to pc_in ignored, since the identifier is never used
+
+Elaborating module <EX_MEM>.
+
+Elaborating module <ForwardUnit>.
+
+Elaborating module <three_way_mux_32_bit>.
+
+Elaborating module <HazardUnit>.
+WARNING:HDLCompiler:634 - "H:\FPGALab\ISEDesignProjects\PCPU\src_pcpu\PCPU.v" Line 19: Net <pc_out[31]> does not have a driver.
+
+Elaborating module <ROM_D>.
+WARNING:HDLCompiler:1499 - "H:\FPGALab\ISEDesignProjects\PCPU\ipcore_dir\ROM_D.v" Line 39: Empty module <ROM_D> remains a black box.
+ERROR:HDLCompiler:267 - "H:\FPGALab\ISEDesignProjects\PCPU\top.v" Line 122: Cannot find port a on this module
+ERROR:HDLCompiler:267 - "H:\FPGALab\ISEDesignProjects\PCPU\top.v" Line 123: Cannot find port spo on this module
+Module Top_of_PCPU remains a blackbox, due to errors in its contents
+WARNING:HDLCompiler:1499 - "H:\FPGALab\ISEDesignProjects\PCPU\top.v" Line 23: Empty module <Top_of_PCPU> remains a black box.
+--> 
+
+Total memory usage is 243456 kilobytes
+
+Number of errors   :    2 (   0 filtered)
+Number of warnings :   22 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

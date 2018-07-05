@@ -1,0 +1,16 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Sun Dec 04 07:33:20 2016
+
+drc -z Top_OExp03_IP2SOC.ncd Top_OExp03_IP2SOC.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   U1/ALUControl/aluop[3]_instIn[5]_MUX_3809_o is sourced by a combinatorial
+   pin. This is not good design practice. Use the CE pin to control the loading
+   of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net U1/ALUControl/instOut_3_G
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+DRC detected 0 errors and 2 warnings.  Please see the previously displayed
+individual error or warning messages for more details.
