@@ -28,4 +28,3 @@ module rf(RA1, RA2, WA, WD, RegWrite, RD1, RD2);
         //end
     end
 endmodule
-

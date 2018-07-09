@@ -1,7 +1,7 @@
 module pc(clk, pcin, inst, pcout);
     input clk;
     input [31:0]pcin;
-    input inst;//控制pc写的信号量
+    input inst;
     output [31:0]pcout;
 
     reg [31:0]currentPC;
@@ -15,7 +15,6 @@ module pc(clk, pcin, inst, pcout);
             currentPC = pcin;
         end
     end
-    
-    assign pcout =  currentPC;
+    assign pcout = currentPC;
 
 endmodule

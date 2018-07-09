@@ -1,8 +1,8 @@
-module Pc(
+module PC(
     input               clk,
     input               PcWrite,
     input               reset,
-    input       [31:0]  adress,
+    input       [31:0]  address,
     output reg  [31:0]  PC
 );
     reg [31:0] register;
@@ -16,10 +16,7 @@ module Pc(
 
     always@(negedge clk)
         if(PcWrite == 1) begin
-            register <= adress[31:0];
+            register <= address[31:0];
         end
         
 endmodule
-    
-    
-    
